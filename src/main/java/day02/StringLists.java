@@ -6,9 +6,7 @@ import java.util.List;
 public class StringLists {
     public List<String> shortestWords(List<String> words) {
         List<String> resultList = new ArrayList<>();
-
         int minLength = Integer.MAX_VALUE;
-
         for (String actual : words) {
             if (actual.length() < minLength) {
                 resultList.clear();
@@ -18,7 +16,6 @@ public class StringLists {
                 resultList.add(actual);
             }
         }
-
         return resultList;
     }
 }
