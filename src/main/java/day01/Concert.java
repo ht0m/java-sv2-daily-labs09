@@ -19,7 +19,4 @@ public class Concert {
             throw new IllegalArgumentException("Sorry, permission denied");
         }
     }
-
-    // isBeforet átgondolni
-
 }

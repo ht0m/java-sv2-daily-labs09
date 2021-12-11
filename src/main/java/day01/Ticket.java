@@ -1,16 +1,15 @@
 package day01;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class Ticket {
-    private String nameOfMusician;
+    private String Band;
     private LocalDateTime startTime;
     private int price;
 
-    public Ticket(String nameOfMusician, LocalDateTime startTime, int price) {
-        this.nameOfMusician = nameOfMusician;
+    public Ticket(String Band, LocalDateTime startTime, int price) {
+        this.Band = Band;
         this.startTime = startTime;
         this.price = price;
     }
@@ -19,8 +18,8 @@ public class Ticket {
         return startTime.toLocalTime().minusHours(1);
     }
 
-    public String getNameOfMusician() {
-        return nameOfMusician;
+    public String getBand() {
+        return Band;
     }
 
     public LocalDateTime getStartTimeTime() {
