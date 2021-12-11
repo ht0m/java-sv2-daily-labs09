@@ -7,7 +7,7 @@ public class UniqueFinder {
 
     public List<Character> getUniqueChars(String text) {
         List<Character> resultList = new ArrayList<>();
-        if (text==null) {
+        if (text == null) {
             throw new IllegalArgumentException("Text is null.");
 
         }
